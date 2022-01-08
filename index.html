@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number</title>
+</head>
+
+<body>
+    <script>
+        Array.prototype.PrimeNo = function() {
+
+            for (let i = 0; i < this.length; i++) {
+                for (let j = 2; j < this[i]; j++) {
+                    if (this[i] % j == 0) {
+                        console.log("This " + this[i] + " is not prime number");
+                        return this[i];
+                    } else {
+                        console.log("this " + this[i] + " is not prime number");
+                        return this[i];
+                    }
+                }
+            }
+        };
+        var num = [5];
+        num.PrimeNo();
+    </script>
+</body>
+
+</html>
